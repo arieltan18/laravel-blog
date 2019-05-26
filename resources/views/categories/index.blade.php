@@ -26,7 +26,7 @@
                            {{$category->posts->count()}}
                        </td>
                        <td>
-                           <a href="{{route('categories.edit',$category->id)}}" class="btn btn-info btn-sm">Edit</a>
+                           <a href="{{route('categories.edit',$category->id)}}" class="btn btn-info">Edit</a>
                            <button class="btn btn-danger" onclick="handleDelete({{$category->id}})">Delete</button>
                        </td>
                    </tr>
