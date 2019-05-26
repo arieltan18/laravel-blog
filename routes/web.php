@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Blog\PostsController;
+use Illuminate\Support\Facades\URL;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
