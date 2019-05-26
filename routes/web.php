@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\Blog\PostsController;
-use Illuminate\Support\Facades\URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,7 +55,3 @@ Route::middleware(['auth','admin'])->group(function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-if (env('APP_ENV') === 'production') {
-    URL::forceSchema('https');
-}
