@@ -9,12 +9,12 @@
     <title>@yield('title')</title>
 
     <!-- Styles -->
-    <link href="{{asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/page.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/style.css')}}" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
-    <link rel="icon" href="{{asset('img/favicon.png')}}">
+    <link rel="apple-touch-icon" href="{{secure_asset('img/apple-touch-icon.png')}}">
+    <link rel="icon" href="{{secure_asset('img/favicon.png')}}">
 </head>
 
 <body>
@@ -27,8 +27,8 @@
         <div class="navbar-left">
             <button class="navbar-toggler" type="button">&#9776;</button>
             <a class="navbar-brand" href="{{route('welcome')}}">
-                <img class="logo-dark" src="{{asset('img/logo-dark.png')}}" alt="logo">
-                <img class="logo-light" src="{{asset('img/logo-light.png')}}" alt="logo">
+                <img class="logo-dark" src="{{secure_asset('img/logo-dark.png')}}" alt="logo">
+                <img class="logo-light" src="{{secure_asset('img/logo-light.png')}}" alt="logo">
             </a>
         </div>
 
@@ -59,7 +59,7 @@
         <div class="row gap-y align-items-center">
 
             <div class="col-6 col-lg-3">
-                <a href="/"><img src="{{asset('img/logo-dark.png')}}" alt="logo"></a>
+                <a href="/"><img src="{{secure_asset('img/logo-dark.png')}}" alt="logo"></a>
             </div>
 
             <div class="col-6 col-lg-3 text-right order-lg-last">
@@ -77,8 +77,8 @@
 
 
 <!-- Scripts -->
-<script src="{{asset('js/page.min.js')}}"></script>
-<script src="{{asset('js/script.js')}}"></script>
+<script src="{{secure_asset('js/page.min.js')}}"></script>
+<script src="{{secure_asset('js/script.js')}}"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ce5516d89338159"></script>
 </body>
 </html>

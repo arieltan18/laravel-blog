@@ -52,7 +52,7 @@
 
             @if(isset($post))
                 <div class="form-group">
-                    <img src="{{asset('/storage/'.$post->image)}}" alt="" width="100%">
+                    <img src="{{secure_asset('/storage/'.$post->image)}}" alt="" width="100%">
                 </div>
             @endif
             <div class="form-group">
